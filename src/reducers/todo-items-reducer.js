@@ -1,11 +1,11 @@
 /* @flow */
 import {compose as lens, lensIndex as i, lensProp as p, remove, set} from 'ramda';
 
-export type TodoItems = Array<TodoItem>;
 type TodoItem = {
   text: string,
   completed: boolean
 };
+export type TodoItems = Array<TodoItem>;
 
 type TodoAction = AddTodoAction | DeleteTodoAction | EditTodoAction |
   ToggleTodoAction | CompleteAllAction | ClearCompletedAction;
